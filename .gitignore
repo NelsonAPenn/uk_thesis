@@ -1,3 +1,10 @@
+## The build directory
+build/
+
+## Grab bag of platform specific files
+*.swp
+.vscode
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
