@@ -9,6 +9,10 @@ What this repo provides:
 - `uk_thesis.cls`, a LaTeX documentclass that is intended for any UK thesis student to use. This should ideally be able to handle any combination of configurations that a UK student would reasonably need for the thesis document (director, co-director, optional fields, etc.). To preserve sanity, this relies on `KomaScript`\: a package that provides versions of the well-loved, standard LaTeX documentclasses to start from that can actually be reasonably modified.
 - A template (everything else). This includes document structure, recommended packages, example tables, figures, code listings, and the like.
 
+## Get started
+
+Fork the thing. This can conveniently be built with `latexmk`. LaTeX and `latexmk` should be installed and configured separately. Debian-based systems can do this all through `apt`. Alternatively, upload the files to Overleaf and let it magically work.
+
 ## Contributing
 
 See [this page](CONTRIBUTING.md).
