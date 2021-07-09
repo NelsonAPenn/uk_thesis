@@ -48,9 +48,6 @@
 \newcommand{\keywords}[1]{\renewcommand{\@keywords}{#1}}
 \newcommand{\@keywords}{}
 
-% \newcommand{\dedication}[1]{\renewcommand{\@dedication}{#1}}
-% \newcommand{\@dedication}{}
-
 \newcommand{\acknowledgements}[1]{\renewcommand{\@acknowledgements}{#1}}
 \newcommand{\@acknowledgements}{}
 
