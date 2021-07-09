@@ -13,7 +13,7 @@ Please be extremely specific when creating issues where
 
 Similarly, for PRs that concern the documentclass, provide the following in the description:
 
-- A link to the issue, which describes how the documentclass 
+- A link to the issue, which describes the above
 - A description of what the PR will improve about the documentclass
 - Your testing: why it won't break other students who use the documentclass.
 
