@@ -191,7 +191,7 @@
   \pagebreak
 }
 
-\newcommand{\@dedigationpage}{
+\newcommand{\@dedicationpage}{
   \ifdefempty{\@dedication}{}{
     \topskip0pt
     \vspace*{\fill}
@@ -221,7 +221,7 @@
   \@titlepage
   \@abstractpage
   \@approvalpage
-  \@dedigationpage
+  \@dedicationpage
   \pagenumbering{roman}
   \setcounter{page}{3}
   \acknowledgementspage
