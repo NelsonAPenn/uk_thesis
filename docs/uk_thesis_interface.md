@@ -30,7 +30,7 @@ Arguments: name and discipline
 \director{Mirosław Truszczyński}{Computer Science}
 ```
 
-### Codirector of Thesis (optional)
+### Co-director of Thesis (optional)
 
 Same usage as `\director`
 
@@ -38,10 +38,18 @@ Same usage as `\director`
 \codirector{Richard Ehrenborg}{Mathematics}
 ```
 
+If you want to align the co-director and director's names, you can use
+```latex
+\aligncodirector{}
+```
+
 ### Degree (required)
 
 ```latex
+% Computer Science is the only Engineering degree without a major in the name
 \degree{Master of Science}
+\degree{Master of Science in Mechanical Engineering}
+%...
 ```
 
 ### Orcid (optional)
@@ -49,12 +57,7 @@ Same usage as `\director`
 ```latex
 \orcid{https://orcid.org/0000-0001-2345-6789}
 ```
-
-### Discipline
-
-\discipline{Computer Science}
-
-### College
+### College (required)
 
 \college{Engineering}
 

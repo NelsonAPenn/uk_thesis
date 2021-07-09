@@ -37,8 +37,9 @@
 \newcommand{\@codirectordiscipline}{}
 \newcommand{\codirector}[2]{\renewcommand{\@codirector}{#1}\renewcommand{\@codirectordiscipline}{#2}}
 
+\newcommand{\alignedcodirector}{\newcommand{\@alignedcodirector}}
+
 \newcommand{\degree}[1]{\newcommand{\@degree}{#1}}
-\newcommand{\discipline}[1]{\newcommand{\@discipline}{#1}}
 \newcommand{\college}[1]{\newcommand{\@college}{#1}}
 
 \newcommand{\@orcid}{}
@@ -97,7 +98,6 @@
       \@titlepagerule{} % TODO: figure out the spacing on this.
       A thesis submitted in partial fulfillment of the\\
       requirements for the degree of \@degree{}\\
-      % in \@discipline{}\\ % conflicting requirements about this
       in the College of \@college\\
       at the University of Kentucky\\
       \bigskip
@@ -107,12 +107,16 @@
       \ifdefempty{\@codirector}{
         Director: Dr. \@director, Professor of \@directordiscipline\\
       }{
-        % Co-Directors: Dr. \@director, Professor of \@directordiscipline\\
-        % and Dr. \@codirector, Professor of \@codirectordiscipline\\
-        \begin{tabular}{lll}
-        Co-Directors:& Dr. \@director,&Professor of \@directordiscipline\\
-        and& Dr. \@codirector,&Professor of \@codirectordiscipline
-        \end{tabular}
+        \ifdef{\@alignedcodirector}{
+          \begin{tabular}{lll}
+          Co-Directors:& Dr. \@director,&Professor of \@directordiscipline\\
+          and& Dr. \@codirector,&Professor of \@codirectordiscipline
+          \end{tabular}
+        }
+        {
+          Co-Directors: Dr. \@director, Professor of \@directordiscipline\\
+          and Dr. \@codirector, Professor of \@codirectordiscipline\\
+        }
       }
       Lexington, Kentucky\\
       \@submissionyear\\
