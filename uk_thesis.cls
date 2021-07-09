@@ -20,12 +20,10 @@
 ]{geometry} % set page margins
 \RequirePackage{anyfontsize} % fixes some weirdness with choosing font size
 \RequirePackage[absolute, overlay]{textpos} % for placing text at absolute locations with textbox* environment
-\RequirePackage{etoolbox}
+\RequirePackage{etoolbox} % Tools for working with LaTeX macros (see ifdefempty)
 \RequirePackage{ulem}
-\RequirePackage{scrlayer-scrpage}
+\RequirePackage{scrlayer-scrpage} % For configuring headers and footers
 \RequirePackage{bookmark} % to add bookmarks to the PDF output, university requirement
-
-% \RequirePackage{scrlayer-scrpage} % for customizing headers and footers, still not figured out completely
 
 % ~~~ TO BE DEFINED BY GRADUATE STUDENT ~~~
 
@@ -289,6 +287,3 @@
 \renewcommand\addchaptertocentry[2]{%
   \addtocentrydefault{chapter}{#1}{\texorpdfstring{\MakeUppercase{#2}}{#2}}%
 } 
-
-
-% TODO: copyright on the last page of every chapter: is this even necessary?
