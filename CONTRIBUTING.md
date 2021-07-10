@@ -8,7 +8,7 @@ Changes to the uk_thesis documentclass should meet very high standards and be ap
 
 Please be extremely specific when creating issues where
 
-- You used a feature that is supported by the documentclass
+- You used a feature that is supported by the documentclass, and
 - The produced result did not meet university guidelines (e.g. the thesis reviewers responded with formatting issues that need revision)
 
 Similarly, for PRs that concern the documentclass, provide the following in the description:
@@ -21,9 +21,7 @@ I am not as concerned about updates to the template (everything but the document
 
 ### Checklist
 
-Go over this checklist before making a pull request, or when reviewing someone else's.
-
-TODO: add checklist
+Go over [this checklist](docs/checklist.md) before making a pull request, or when reviewing someone else's.
 
 ## Issues
 
