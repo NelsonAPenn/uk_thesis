@@ -9,7 +9,6 @@
 ]{scrbook}
 
 % ~~~ PACKAGES NECESSARY ~~~
-aoeuaoeuaoeu
 \RequirePackage[
   letterpaper,
   lmargin={1.5in},
