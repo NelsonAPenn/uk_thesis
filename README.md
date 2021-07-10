@@ -2,7 +2,7 @@
 
 An unofficial LaTeX thesis template for University of Kentucky graduate students.
 
-The University of Kentucky provides lots of thesis templates and examples for Microsoft Word. Fight for your right to not use Word! Go open source and Linux!
+The University of Kentucky provides lots of thesis templates and examples for Microsoft Word. This template is for those who don't want to use Word!
 
 What this repo provides:
 
