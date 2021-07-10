@@ -9,8 +9,9 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  documentclass_update:
-    any: uk_thesis.cls
+  label:
+    documentclass_update:
+      any: uk_thesis.cls
     runs-on: ubuntu-latest
     permissions:
       contents: read
