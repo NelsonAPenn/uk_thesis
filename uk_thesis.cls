@@ -194,7 +194,6 @@
 
 \newcommand{\@dedicationpage}{
   \ifdefempty{\@dedication}{}{
-    \topskip0pt
     \vspace*{\fill}
     \begin{center}
       DEDICATION\\
