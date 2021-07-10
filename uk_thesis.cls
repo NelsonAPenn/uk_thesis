@@ -21,7 +21,7 @@
 \RequirePackage{anyfontsize} % fixes some weirdness with choosing font size
 \RequirePackage[absolute, overlay]{textpos} % for placing text at absolute locations with textbox* environment
 \RequirePackage{etoolbox} % Tools for working with LaTeX macros (see ifdefempty)
-\RequirePackage{ulem}
+\RequirePackage{ulem} % For horizontal rules on intro pages
 \RequirePackage{scrlayer-scrpage} % For configuring headers and footers
 \RequirePackage{bookmark} % to add bookmarks to the PDF output, university requirement
 
