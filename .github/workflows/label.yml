@@ -11,7 +11,7 @@ on: [pull_request]
 jobs:
   label:
     documentclass_update:
-      any: uk_thesis.cls
+    - uk_thesis.cls
     runs-on: ubuntu-latest
     permissions:
       contents: read
