@@ -35,7 +35,7 @@
     \newcommand{\Z}{\mathbb{Z}}
     \newcommand{\C}{\mathbb{C}}
     \newcommand{\N}{\mathbb{N}}
-    \newcommand{\xor}{\ifmmode \oplus \else \textit{exclusive OR}\fi}
+    \newcommand{\xor}{\ifmmode{}\oplus{}\else{}\textit{exclusive OR}\fi}
     \newcommand{\rightshift}{\ensuremath\mathrm{ >> }}
     \newcommand{\tablepad}{\vspace{0.8cm}}
 
@@ -48,7 +48,7 @@
     basicstyle=\ttfamily,
     columns=fullflexible,
     breaklines=true,
-    postbreak=\mbox{{$\hookrightarrow$}\space},
+    postbreak=\mbox{{\(\hookrightarrow{}\)}\space},
     }
 
 % ~~~ END CONFIGURATIONS ~~~
@@ -71,7 +71,7 @@
     \lipsum[1]
 }
 \keywords{algorithms, graph theory, cats, numerical analysis, computer algebra systems}
-% \dedication{To my lovely cat, Jeff.}
+\dedication{To my lovely cat, Jeff.} % WARNING: see issue #3
 \acknowledgements{
     \lipsum[1]
 }
@@ -90,14 +90,14 @@
 
 % list of additional files
 
-\doublespacing
-\mainmatter
+\doublespacing{}
+\mainmatter{}
 \input{thesis_body}
-\singlespacing
+\singlespacing{}
 
 
 \appendix
-\backmatter
+\backmatter{}
 
 \chapter{Appendices}
 
@@ -113,7 +113,7 @@
 
         \lstinputlisting[language=C++]{res/code_snippets/main.cpp}
 
-    \normalfont
+    \normalfont{}
 
 
 \bibliographystyle{apalike}
