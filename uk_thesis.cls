@@ -81,7 +81,14 @@
 \newcommand{\@signature}[2]{\uline{\ \hfill{}#2\hfill{}\ }\\#1\vspace*{5mm}} % Provides a blank labeled #1 with #2 filled in. Expands to fill its container.
 
 \newcommand{\@titlepagerulewidth}{3.0in} % use dimen? probably more kosher but less readable
-\newcommand{\@titlepagerule}[1]{\rule{\@titlepagerulewidth}{0.15mm}\\#1\vspace*{2mm}}
+\newcommand{\@titlepagerule}{\rule{\@titlepagerulewidth}{0.15mm}}
+\newcommand{\@titlepageblock}[1]{
+  \@titlepagerule{}\\
+  \vspace*{0.6\baselineskip}
+  #1\\
+  \@titlepagerule{}
+  \vspace*{2mm}
+}
 
 
 \newcommand{\@titlepage}{
@@ -94,8 +101,7 @@
   \end{textblock*}
   \begin{textblock*}{\textwidth}(1.5in, 4in)
     \begin{center}
-      \@titlepagerule{THESIS}\\
-      \@titlepagerule{} % TODO: figure out the spacing on this.
+      \@titlepageblock{THESIS}\\
       A thesis submitted in partial fulfillment of the\\
       requirements for the degree of \@degree{}\\
       in the College of \@college\\
@@ -286,4 +292,4 @@
 % make chapter TOC entries uppercase. Also prevent hyperref complaining about the MakeUppercase macro.
 \renewcommand\addchaptertocentry[2]{%
   \addtocentrydefault{chapter}{#1}{\texorpdfstring{\MakeUppercase{#2}}{#2}}%
-} 
+}
