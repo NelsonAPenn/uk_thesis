@@ -2,7 +2,17 @@
 
 If it ain't required and you don't want to include it, comment it out rather than providing an empty definition.
 
-## Fields 
+## Options
+
+### Thesis/Dissertation mode
+
+```latex
+\documentclass{uk_thesis}               % implicit thesis mode
+\documentclass[thesis]{uk_thesis}       % explicit thesis mode
+\documentclass[dissertation]{uk_thesis} % dissertation mode
+```
+
+## Fields
 
 ### Title (required)
 
@@ -59,7 +69,9 @@ If you want to align the co-director and director's names, you can use
 ```
 ### College (required)
 
+```latex
 \college{Engineering}
+```
 
 ### Submission date (required)
 

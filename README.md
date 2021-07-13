@@ -13,6 +13,16 @@ What this repo provides:
 
 Fork the thing. This can conveniently be built with `latexmk`. LaTeX and `latexmk` should be installed and configured separately. Debian-based systems can do this all through `apt`. Alternatively, upload the files to Overleaf and let it magically work.
 
+## Doctoral dissertation mode (experimental)
+
+This documentclass provides a dissertation mode for doctoral candidates. To enable this mode, pass the `dissertation` option to the class declaration:
+
+```latex
+\documentclass[dissertation]{uk_thesis}
+```
+
+At the moment, this mode changes all usages of `Thesis` with `Dissertation` in the front matter. It may do more than that as more differences between the thesis and dissertation formats are uncovered.
+
 ## Contributing
 
 See [this page](CONTRIBUTING.md).
