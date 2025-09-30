@@ -185,9 +185,12 @@
       \vspace*{1mm}\\
       KEYWORDS: \@keywords
     }
+    \par
     \vfill
     \hfill
     \raggedleft
+    \par
+    \vspace*{\fill}
     \parbox[c]{\@signaturewidth}{
       \centering
       \@signature{}{\@author}
