@@ -229,7 +229,9 @@
 \newcommand{\acknowledgementspage}{
   \ifdefempty{\@acknowledgements}{}{
     \chapter{Acknowledgements}
-    \@acknowledgements
+    \begin{doublespace}
+      \@acknowledgements
+    \end{doublespace}
   }
 }
 
