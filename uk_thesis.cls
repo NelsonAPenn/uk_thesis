@@ -156,34 +156,49 @@
   \pagebreak
 
 }
-
+  
 \newcommand{\@abstractpage} {
   \pdfbookmark[0]{Abstract}{abstract}
-  \vspace*{0mm}
-  \thispagestyle{plain}
-  \begin{textblock*}{\textwidth}(1.5in, 2.5in)
-  \begin{center}
-    ABSTRACT OF \@DOCTYPE
-  \end{center}
-  \end{textblock*}
-  \begin{textblock*}{\textwidth}(1.5in, 3.5in)
-  \begin{center}
-    \MakeUppercase{\@title}
-  \end{center}
-  \end{textblock*}
-  \begin{textblock*}{\textwidth}(1.5in, 4.5in)
+  {
+    \thispagestyle{plain}
+    \setlength{\topskip}{0mm}
+    \nointerlineskip
+    \setlength{\parskip}{0pt}
+    \setlength{\rightskip}{0pt}
+    \vspace*{2.5in}
+    \begin{textblock*}{\textwidth}(1.5in, 2.5in)
+      \begin{center}
+        ABSTRACT OF \@DOCTYPE
+      \end{center}
+    \end{textblock*}
+    \@topsepadd \topsep
+    \advance\@topsepadd \partopsep
+    \setlength{\@topsep}{1\@topsepadd}
+    {
+      \centering 
+      \addvspace\@topsep
+      \MakeUppercase{\@title} \par
+    }
+    \vspace*{0.45in} 
     \@abstract\\
     \ifdefempty{\@keywords}{}{
       \vspace*{1mm}\\
       KEYWORDS: \@keywords
     }
-  \end{textblock*}
-  \begin{textblock*}{\@signaturewidth}(\paperwidth - \@signaturewidth - 1in,8in)
-    \centering
-    \noindent\@signature{}{\@author}
-    \noindent\@signature{Date}{\@submissionmonth/\@submissionday/\@submissionyear} \\
-  \end{textblock*}
-  \pagebreak
+    \par
+    \vfill
+    \hfill
+    \raggedleft
+    \par
+    \vspace*{\fill}
+    \parbox[c]{\@signaturewidth}{
+      \centering
+      \@signature{}{\@author}
+      \@signature{Date}{\@submissionmonth/\@submissionday/\@submissionyear}
+    }
+    \vspace*{1in} \par
+    \pagebreak
+  }
 }
 
 
